@@ -31,6 +31,7 @@ public class RequestBodyJsonController {
         ServletInputStream inputStream = request.getInputStream();
         String messageBody = StreamUtils.copyToString(inputStream, StandardCharsets.UTF_8);
         System.out.println("git flow test");
+        System.out.println("feature test branch change!");
 
         log.info("messageBody={}", messageBody);
         HelloData helloData = objectMapper.readValue(messageBody, HelloData.class);
