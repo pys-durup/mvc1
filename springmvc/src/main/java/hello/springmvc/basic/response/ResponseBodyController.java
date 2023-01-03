@@ -21,6 +21,7 @@ public class ResponseBodyController {
         //  HTTP 메시지 바디에 직접 ok 응답 메시지를 전달
         System.out.println("develop branch change!");
         System.out.println("develop branch change!");
+        System.out.println("feature test branch change!");
         response.getWriter().write("ok");
     }
 
