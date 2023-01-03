@@ -19,6 +19,7 @@ public class ResponseBodyController {
     @GetMapping("/response-body-string-v1")
     public void responseBodyV1(HttpServletResponse response) throws IOException {
         //  HTTP 메시지 바디에 직접 ok 응답 메시지를 전달
+        System.out.println("develop branch change!");
         response.getWriter().write("ok");
     }
 
